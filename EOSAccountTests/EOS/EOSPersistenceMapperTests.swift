@@ -48,7 +48,9 @@ class EOSPersistenceMapperTests: XCTestCase {
                                                max: 398452198996935373),
             cpuLimit: EOSAccount.ResourceLimit(used: 1360185766404912725,
                                                max: 2403681607635462262),
-            ramUsage: 344554966664123230)
+            ramUsage: 344554966664123230,
+            totalResourses: EOSAccount.TotalResourses(netWeight: "1.234 EOS",
+                                                      cpuWeight: "5.678 EOS"))
     }
     
     func getEosDBAccount() -> EOSDBAccount {
@@ -61,6 +63,8 @@ class EOSPersistenceMapperTests: XCTestCase {
         eosDBAccount.cpuUsed = 656588581919617257
         eosDBAccount.ramQuota = 1126679153921201460
         eosDBAccount.ramUsage = 130438159021454758
+        eosDBAccount.totalCpuWeight = "9.876 EOS"
+        eosDBAccount.totalNetWeight = "1.432 EOS"
         
         return eosDBAccount
     }

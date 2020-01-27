@@ -17,4 +17,6 @@ class EOSDBAccount {
     var cpuUsed: Int64? = nil
     var cpuMax: Int64? = nil
     var ramUsage: Int64? = nil
+    var totalNetWeight: String? = nil
+    var totalCpuWeight: String? = nil
 }

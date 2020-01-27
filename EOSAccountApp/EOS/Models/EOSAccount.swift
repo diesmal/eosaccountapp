@@ -15,10 +15,16 @@ struct EOSAccount {
     let netLimit: ResourceLimit?
     let cpuLimit: ResourceLimit?
     let ramUsage: Int64?
+    let totalResourses: TotalResourses?
     
     struct ResourceLimit: Decodable {
         let used: Int64?
         let max: Int64?
+    }
+    
+    struct TotalResourses {
+         let netWeight: String?
+         let cpuWeight: String?
     }
 }
 
@@ -29,6 +35,14 @@ extension EOSAccount: Decodable {
         case ramQuota = "ram_quota"
         case netLimit = "net_limit"
         case cpuLimit = "cpu_limit"
-        case ramUsage = "ram_usage"        
+        case ramUsage = "ram_usage"
+        case totalResourses = "total_resources"
+    }
+}
+
+extension EOSAccount.TotalResourses: Decodable {
+    enum CodingKeys: String, CodingKey {
+        case netWeight = "net_weight"
+        case cpuWeight = "cpu_weight"
     }
 }

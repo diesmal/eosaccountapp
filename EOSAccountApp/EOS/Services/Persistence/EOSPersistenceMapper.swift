@@ -17,7 +17,9 @@ final class EOSPersistenceMapper {
                                  ramQuota: dbAccount.ramQuota,
                                  netLimit: EOSAccount.ResourceLimit(used: dbAccount.netUsed, max: dbAccount.netMax),
                                  cpuLimit: EOSAccount.ResourceLimit(used: dbAccount.cpuUsed, max: dbAccount.cpuMax),
-                                 ramUsage: dbAccount.ramUsage)
+                                 ramUsage: dbAccount.ramUsage,
+                                 totalResourses: EOSAccount.TotalResourses(netWeight: dbAccount.totalNetWeight,
+                                                                           cpuWeight: dbAccount.totalCpuWeight))
         return account
     }
     
@@ -30,5 +32,7 @@ final class EOSPersistenceMapper {
         dbAccount.cpuMax = account.cpuLimit?.max ?? 0
         dbAccount.netUsed = account.netLimit?.used ?? 0
         dbAccount.netMax = account.netLimit?.max ?? 0
+        dbAccount.totalNetWeight = account.totalResourses?.netWeight
+        dbAccount.totalCpuWeight = account.totalResourses?.cpuWeight
     }
 }

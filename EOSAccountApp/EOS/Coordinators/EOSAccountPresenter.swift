@@ -8,7 +8,6 @@
 
 import Foundation
 
-/// Connecting view model with coordinator
 protocol EOSAccountPresenter: class {
-    func present(account: EOSAccount)
+    func presentAccountsList()
 }

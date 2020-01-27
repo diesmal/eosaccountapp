@@ -9,8 +9,10 @@
         <attribute name="netUsed" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="ramQuota" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="ramUsage" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="totalCpuWeight" optional="YES" attributeType="String"/>
+        <attribute name="totalNetWeight" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="EOSDBAccount" positionX="-63" positionY="-18" width="128" height="163"/>
+        <element name="EOSDBAccount" positionX="-63" positionY="-18" width="128" height="193"/>
     </elements>
 </model>

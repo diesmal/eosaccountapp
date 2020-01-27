@@ -16,15 +16,15 @@ class AccounstListViewModel {
     private var accounts = [EOSAccount]()
     private let eosService: EOSService
     private let avatarProvider: AvatarProvider
-    private weak var accountPresenter: EOSAccountPresenter?
+    private weak var presenter: EOSAccountsListPresenter?
     
     var count: Int {        
         return accounts.count
     }
     
-    init(service: EOSService, avatarProvider: AvatarProvider, accountPresenter: EOSAccountPresenter) {
+    init(service: EOSService, avatarProvider: AvatarProvider, presenter: EOSAccountsListPresenter) {
         eosService = service
-        self.accountPresenter = accountPresenter
+        self.presenter = presenter
         self.avatarProvider = avatarProvider
         updateAccounts()
     }
@@ -58,6 +58,6 @@ class AccounstListViewModel {
     }
     
     func onAccount(ar index: Int) {
-        accountPresenter?.present(account: accounts[index])
+        presenter?.present(account: accounts[index])
     }
 }

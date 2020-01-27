@@ -39,7 +39,10 @@ class EOSCoordinator {
 extension EOSCoordinator {
     func eosAccountVC(for account: EOSAccount) -> UIViewController {
         let viewController = EOSAccountViewController.instantiate(from: storyboard)
-        let viewModel = EOSAccountViewModel(eosService: eosService, ratesService: coinRatesService, account: account)
+        let viewModel = EOSAccountViewModel(eosService: eosService,
+                                            ratesService: coinRatesService,
+                                            presenter: self,
+                                            account: account)
         viewController.viewModel = viewModel
         return viewController
     }
@@ -48,15 +51,21 @@ extension EOSCoordinator {
         let viewController = AccounstListCollectionViewController.instantiate(from: storyboard)
         let viewModel = AccounstListViewModel(service: eosService,
                                               avatarProvider: avatarProvider,
-                                              accountPresenter: self)
+                                              presenter: self)
         viewController.viewModel = viewModel
         return viewController
     }
 }
 
-extension EOSCoordinator: EOSAccountPresenter {
+extension EOSCoordinator: EOSAccountsListPresenter {
     func present(account: EOSAccount) {
         let viewController = eosAccountVC(for: account)
         navController.pushViewController(viewController, animated: true)
+    }
+}
+
+extension EOSCoordinator: EOSAccountPresenter {
+    func presentAccountsList() {
+        navController.popToRootViewController(animated: true)
     }
 }

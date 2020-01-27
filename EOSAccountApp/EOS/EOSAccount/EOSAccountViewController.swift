@@ -25,6 +25,8 @@ class EOSAccountViewController: UIViewController, Combinable {
     @IBOutlet weak var ramProgress: ProgressView!
     @IBOutlet weak var ramTitle: UILabel!
     @IBOutlet weak var cost: UILabel!
+    @IBOutlet weak var netStacked: UILabel!
+    @IBOutlet weak var cpuStacked: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +53,8 @@ class EOSAccountViewController: UIViewController, Combinable {
         mainAssign(viewModel.$netUsage, to: \.text, on: netTitle)
         mainAssign(viewModel.$cpuUsage, to: \.text, on: cpuTitle)
         mainAssign(viewModel.$ramUsage, to: \.text, on: ramTitle)
+        mainAssign(viewModel.$netStacked, to: \.text, on: netStacked)
+        mainAssign(viewModel.$cpuStacked, to: \.text, on: cpuStacked)
         
         mainBind(viewModel.$netNormalizedUsage) { [weak self] (usage) in
             self?.updateUsage(progressView: self?.netProgress, usage: usage)
@@ -67,6 +71,18 @@ class EOSAccountViewController: UIViewController, Combinable {
         UIView.animate(withDuration: 0.3) {
             progressView?.progress = CGFloat(usage)
         }
+    }
+    
+    @IBAction func onSend(_ sender: UIButton) {
+        viewModel.onSend()
+    }
+    
+    @IBAction func onReceive(_ sender: UIButton) {
+        viewModel.onReceive()
+    }
+    
+    @IBAction func onDeposit(_ sender: UIButton) {
+        viewModel.onDeposit()
     }
 }
 

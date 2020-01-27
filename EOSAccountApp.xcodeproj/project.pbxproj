@@ -50,13 +50,14 @@
 		025A109C23DEE5D1001035E8 /* UIWebAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A109B23DEE5D1001035E8 /* UIWebAvatarView.swift */; };
 		025A109E23DEE943001035E8 /* AccountCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A109D23DEE943001035E8 /* AccountCollectionViewCell.swift */; };
 		0270F77723DDA2EA00F46DED /* BackgroundRepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270F77623DDA2EA00F46DED /* BackgroundRepeatingTimer.swift */; };
+		029876B523DF956A00607609 /* EOSAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029876B423DF956A00607609 /* EOSAccountPresenter.swift */; };
 		029BEF5D23DF18900014ECFA /* NumberExtractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029BEF5C23DF18900014ECFA /* NumberExtractable.swift */; };
 		02AD723223DCD92D00CBE25F /* EOSPersistenceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AD723123DCD92D00CBE25F /* EOSPersistenceMapper.swift */; };
 		02AD723523DD76DD00CBE25F /* CoreDataPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AD723423DD76DD00CBE25F /* CoreDataPersistence.swift */; };
 		02B6AF9223DE1E38006C9A52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02B6AF9123DE1E38006C9A52 /* Images.xcassets */; };
 		02B6AF9923DE211B006C9A52 /* eurostile-extended-black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02B6AF9823DE211B006C9A52 /* eurostile-extended-black.ttf */; };
 		02B6AF9B23DE411C006C9A52 /* BitUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6AF9A23DE411B006C9A52 /* BitUnit.swift */; };
-		02F05F2723DF0CF5004BEC06 /* EOSAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F05F2623DF0CF5004BEC06 /* EOSAccountPresenter.swift */; };
+		02F05F2723DF0CF5004BEC06 /* EOSAccountsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F05F2623DF0CF5004BEC06 /* EOSAccountsListPresenter.swift */; };
 		02F0BF48237A934000BC0603 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F0BF3F237A934000BC0603 /* NetworkLayer.swift */; };
 		02F90E2F23DDFDE90083E5D9 /* EOS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F90E2E23DDFDE90083E5D9 /* EOS.storyboard */; };
 		02F90E3323DDFE210083E5D9 /* UIViewRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F90E3023DDFE210083E5D9 /* UIViewRounded.swift */; };
@@ -122,6 +123,7 @@
 		025A109B23DEE5D1001035E8 /* UIWebAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebAvatarView.swift; sourceTree = "<group>"; };
 		025A109D23DEE943001035E8 /* AccountCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCollectionViewCell.swift; sourceTree = "<group>"; };
 		0270F77623DDA2EA00F46DED /* BackgroundRepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundRepeatingTimer.swift; sourceTree = "<group>"; };
+		029876B423DF956A00607609 /* EOSAccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSAccountPresenter.swift; sourceTree = "<group>"; };
 		029BEF5C23DF18900014ECFA /* NumberExtractable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberExtractable.swift; sourceTree = "<group>"; };
 		02AD723123DCD92D00CBE25F /* EOSPersistenceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSPersistenceMapper.swift; sourceTree = "<group>"; };
 		02AD723423DD76DD00CBE25F /* CoreDataPersistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataPersistence.swift; sourceTree = "<group>"; };
@@ -129,7 +131,7 @@
 		02B6AF9823DE211B006C9A52 /* eurostile-extended-black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "eurostile-extended-black.ttf"; sourceTree = "<group>"; };
 		02B6AF9A23DE411B006C9A52 /* BitUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitUnit.swift; sourceTree = "<group>"; };
 		02C4B800236E0251003631EF /* EOS Account.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EOS Account.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		02F05F2623DF0CF5004BEC06 /* EOSAccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSAccountPresenter.swift; sourceTree = "<group>"; };
+		02F05F2623DF0CF5004BEC06 /* EOSAccountsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSAccountsListPresenter.swift; sourceTree = "<group>"; };
 		02F0BF3F237A934000BC0603 /* NetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		02F0BF43237A934000BC0603 /* UITableView_Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView_Cells.swift; sourceTree = "<group>"; };
 		02F90E2E23DDFDE90083E5D9 /* EOS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EOS.storyboard; sourceTree = "<group>"; };
@@ -527,7 +529,8 @@
 			isa = PBXGroup;
 			children = (
 				02F90E3B23DE05CC0083E5D9 /* EOSCoordinator.swift */,
-				02F05F2623DF0CF5004BEC06 /* EOSAccountPresenter.swift */,
+				02F05F2623DF0CF5004BEC06 /* EOSAccountsListPresenter.swift */,
+				029876B423DF956A00607609 /* EOSAccountPresenter.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -704,7 +707,8 @@
 				02F90E4323DE13A10083E5D9 /* FetchedObjectList.swift in Sources */,
 				0224774423DC73D100AB96C9 /* EOSEndpoints.swift in Sources */,
 				025A109823DEE43F001035E8 /* AccounstListCollectionViewController.swift in Sources */,
-				02F05F2723DF0CF5004BEC06 /* EOSAccountPresenter.swift in Sources */,
+				029876B523DF956A00607609 /* EOSAccountPresenter.swift in Sources */,
+				02F05F2723DF0CF5004BEC06 /* EOSAccountsListPresenter.swift in Sources */,
 				0221EF6C236EE57D00522F05 /* AppDelegate.swift in Sources */,
 				0224773923DC667F00AB96C9 /* HTTPLayer.swift in Sources */,
 			);
@@ -893,11 +897,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1.0;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/EOSAccountApp/App/Supporting Files/Info.plist";
 				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.diezmal.eosaccountapp;
 				PRODUCT_NAME = "EOS Account";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

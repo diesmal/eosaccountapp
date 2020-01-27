@@ -15,6 +15,7 @@ class EOSAccountViewModel: Combinable {
     private var fetchStorage: Any?
     private let eosService: EOSService
     private let ratesService: CoinRates
+    private weak var presenter: EOSAccountPresenter?
     private var account: EOSAccount {
         didSet {
             name = account.name
@@ -22,12 +23,15 @@ class EOSAccountViewModel: Combinable {
             netUsage = formatUsageData(account.netLimit?.used, account.netLimit?.max)
             cpuUsage = "\(account.cpuLimit?.used ?? 0) μs /  \(account.cpuLimit?.max ?? 0) μs"
             ramUsage = formatUsageData(account.ramUsage, account.ramQuota)
+            netStacked = account.totalResourses?.netWeight
+            cpuStacked = account.totalResourses?.cpuWeight
             netNormalizedUsage = normalize(current: account.netLimit?.used ?? 0,
                                            max: account.netLimit?.max ?? 0)
             cpuNormalizedUsage = normalize(current: account.cpuLimit?.used ?? 0,
                                            max: account.cpuLimit?.max ?? 0)
             ramNormalizedUsage = normalize(current: account.ramUsage ?? 0,
                                            max: account.ramQuota ?? 0)
+            
             updateCost()
         }
     }
@@ -38,13 +42,16 @@ class EOSAccountViewModel: Combinable {
     @Published var netUsage: String? = ""
     @Published var cpuUsage: String? = ""
     @Published var ramUsage: String? = ""
+    @Published var netStacked: String? = ""
+    @Published var cpuStacked: String? = ""
     @Published var netNormalizedUsage: Float = 0
     @Published var cpuNormalizedUsage: Float = 0
     @Published var ramNormalizedUsage: Float = 0
     
-    init(eosService: EOSService, ratesService: CoinRates, account: EOSAccount) {
+    init(eosService: EOSService, ratesService: CoinRates, presenter: EOSAccountPresenter, account: EOSAccount) {
         self.eosService = eosService
         self.ratesService = ratesService
+        self.presenter = presenter
         self.account = account
         setupFetch(for: account.name)
         eosService.startAccountUpdating(name: account.name)
@@ -54,6 +61,18 @@ class EOSAccountViewModel: Combinable {
     func viewReady() {
         let tmpAccount = account
         self.account = tmpAccount
+    }
+    
+    func onSend() {
+        presenter?.presentAccountsList()
+    }
+    
+    func onReceive() {
+        presenter?.presentAccountsList()
+    }
+    
+    func onDeposit() {
+        presenter?.presentAccountsList()
     }
     
     func setupFetch(for accountName: String) {
@@ -90,5 +109,9 @@ class EOSAccountViewModel: Combinable {
             return 0
         }
         return Float(current) / Float(max)
+    }
+    
+    deinit {
+        eosService.stopAccountUpdating()
     }
 }
