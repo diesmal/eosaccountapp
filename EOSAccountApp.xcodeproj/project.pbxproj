@@ -1,0 +1,950 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0221EF6A236EE57D00522F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0221EF58236EE57D00522F05 /* Assets.xcassets */; };
+		0221EF6C236EE57D00522F05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0221EF5C236EE57D00522F05 /* AppDelegate.swift */; };
+		0221EF6D236EE57D00522F05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0221EF5E236EE57D00522F05 /* LaunchScreen.storyboard */; };
+		0224773923DC667F00AB96C9 /* HTTPLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224773723DC667F00AB96C9 /* HTTPLayer.swift */; };
+		0224773A23DC667F00AB96C9 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224773823DC667F00AB96C9 /* HTTPMethod.swift */; };
+		0224773C23DC670100AB96C9 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224773B23DC670100AB96C9 /* HTTP.swift */; };
+		0224774023DC737100AB96C9 /* EOSApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224773F23DC737100AB96C9 /* EOSApi.swift */; };
+		0224774223DC738200AB96C9 /* EOSApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224774123DC738200AB96C9 /* EOSApiRouter.swift */; };
+		0224774423DC73D100AB96C9 /* EOSEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224774323DC73D100AB96C9 /* EOSEndpoints.swift */; };
+		0224774623DC76D100AB96C9 /* NetworkScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224774523DC76D100AB96C9 /* NetworkScheme.swift */; };
+		0224774923DC97E700AB96C9 /* EOSAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224774823DC97E700AB96C9 /* EOSAccount.swift */; };
+		0224777023DCBC3E00AB96C9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224776F23DCBC3E00AB96C9 /* Persistence.swift */; };
+		02266053238156D900A7F0F9 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02266051238156D800A7F0F9 /* Identifiable.swift */; };
+		02266054238156D900A7F0F9 /* Combinable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02266052238156D900A7F0F9 /* Combinable.swift */; };
+		022660582381574200A7F0F9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022660572381574200A7F0F9 /* Logger.swift */; };
+		022ACD4023806E99005A856E /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022ACD3F23806E99005A856E /* AlertPresenter.swift */; };
+		0232A40A23DF45870080DFF1 /* CoinRatesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0232A40423DF45870080DFF1 /* CoinRatesProvider.swift */; };
+		0232A40B23DF45870080DFF1 /* CoinsRatesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0232A40523DF45870080DFF1 /* CoinsRatesRouter.swift */; };
+		0232A40C23DF45870080DFF1 /* CoinRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0232A40723DF45870080DFF1 /* CoinRate.swift */; };
+		0232A40D23DF45870080DFF1 /* CoinRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0232A40823DF45870080DFF1 /* CoinRates.swift */; };
+		0232A40F23DF459E0080DFF1 /* AvatarProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0232A40E23DF459E0080DFF1 /* AvatarProvider.swift */; };
+		0232A41123DF46000080DFF1 /* AdorableAvatars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0232A41023DF46000080DFF1 /* AdorableAvatars.swift */; };
+		023DB80A238000290051F149 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023DB808238000290051F149 /* AppCoordinator.swift */; };
+		023DB80F238002F20051F149 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023DB80E238002F20051F149 /* NetworkRequest.swift */; };
+		023DB8112380031E0051F149 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023DB8102380031D0051F149 /* Network.swift */; };
+		023DB813238006170051F149 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023DB812238006170051F149 /* Storyboarded.swift */; };
+		023F1B5C23DCC0E0007F65EC /* EOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 023F1B5A23DCC0E0007F65EC /* EOS.xcdatamodeld */; };
+		023F1B7B23DCCB6F007F65EC /* EOSPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023F1B7A23DCCB6F007F65EC /* EOSPersistence.swift */; };
+		025A108023DECF27001035E8 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A107F23DECF27001035E8 /* Logger.swift */; };
+		025A108223DECF7C001035E8 /* BitUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A108123DECF7C001035E8 /* BitUnitTests.swift */; };
+		025A108323DECFC5001035E8 /* BitUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6AF9A23DE411B006C9A52 /* BitUnit.swift */; };
+		025A108623DED229001035E8 /* EOSPersistenceMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A108523DED229001035E8 /* EOSPersistenceMapperTests.swift */; };
+		025A108723DED232001035E8 /* EOSPersistenceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AD723123DCD92D00CBE25F /* EOSPersistenceMapper.swift */; };
+		025A108823DED287001035E8 /* EOSAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224774823DC97E700AB96C9 /* EOSAccount.swift */; };
+		025A109023DED8BF001035E8 /* EOSDBAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A108F23DED8BF001035E8 /* EOSDBAccount.swift */; };
+		025A109423DEDD75001035E8 /* EOSEndpointsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A109323DEDD75001035E8 /* EOSEndpointsTests.swift */; };
+		025A109523DEDD90001035E8 /* EOSEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224774323DC73D100AB96C9 /* EOSEndpoints.swift */; };
+		025A109623DEDDF8001035E8 /* NetworkScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0224774523DC76D100AB96C9 /* NetworkScheme.swift */; };
+		025A109823DEE43F001035E8 /* AccounstListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A109723DEE43F001035E8 /* AccounstListCollectionViewController.swift */; };
+		025A109A23DEE45D001035E8 /* AccounstListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A109923DEE45D001035E8 /* AccounstListViewModel.swift */; };
+		025A109C23DEE5D1001035E8 /* UIWebAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A109B23DEE5D1001035E8 /* UIWebAvatarView.swift */; };
+		025A109E23DEE943001035E8 /* AccountCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025A109D23DEE943001035E8 /* AccountCollectionViewCell.swift */; };
+		0270F77723DDA2EA00F46DED /* BackgroundRepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0270F77623DDA2EA00F46DED /* BackgroundRepeatingTimer.swift */; };
+		029BEF5D23DF18900014ECFA /* NumberExtractable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029BEF5C23DF18900014ECFA /* NumberExtractable.swift */; };
+		02AD723223DCD92D00CBE25F /* EOSPersistenceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AD723123DCD92D00CBE25F /* EOSPersistenceMapper.swift */; };
+		02AD723523DD76DD00CBE25F /* CoreDataPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AD723423DD76DD00CBE25F /* CoreDataPersistence.swift */; };
+		02B6AF9223DE1E38006C9A52 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02B6AF9123DE1E38006C9A52 /* Images.xcassets */; };
+		02B6AF9923DE211B006C9A52 /* eurostile-extended-black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02B6AF9823DE211B006C9A52 /* eurostile-extended-black.ttf */; };
+		02B6AF9B23DE411C006C9A52 /* BitUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B6AF9A23DE411B006C9A52 /* BitUnit.swift */; };
+		02F05F2723DF0CF5004BEC06 /* EOSAccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F05F2623DF0CF5004BEC06 /* EOSAccountPresenter.swift */; };
+		02F0BF48237A934000BC0603 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F0BF3F237A934000BC0603 /* NetworkLayer.swift */; };
+		02F90E2F23DDFDE90083E5D9 /* EOS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F90E2E23DDFDE90083E5D9 /* EOS.storyboard */; };
+		02F90E3323DDFE210083E5D9 /* UIViewRounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F90E3023DDFE210083E5D9 /* UIViewRounded.swift */; };
+		02F90E3423DDFE210083E5D9 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F90E3123DDFE210083E5D9 /* ProgressView.swift */; };
+		02F90E3523DDFE210083E5D9 /* DustLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F90E3223DDFE210083E5D9 /* DustLayer.swift */; };
+		02F90E3723DE04AE0083E5D9 /* EOSAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F90E3623DE04AE0083E5D9 /* EOSAccountViewController.swift */; };
+		02F90E3923DE05280083E5D9 /* EOSAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F90E3823DE05280083E5D9 /* EOSAccountViewModel.swift */; };
+		02F90E3C23DE05CC0083E5D9 /* EOSCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F90E3B23DE05CC0083E5D9 /* EOSCoordinator.swift */; };
+		02F90E3E23DE065D0083E5D9 /* EOSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F90E3D23DE065D0083E5D9 /* EOSService.swift */; };
+		02F90E4223DE13A10083E5D9 /* MappedFetchedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F90E4023DE13A10083E5D9 /* MappedFetchedList.swift */; };
+		02F90E4323DE13A10083E5D9 /* FetchedObjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F90E4123DE13A10083E5D9 /* FetchedObjectList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		025A107823DECE82001035E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02C4B7F8236E0251003631EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02C4B7FF236E0251003631EF;
+			remoteInfo = EOSAccountApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0221EF58236EE57D00522F05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0221EF5A236EE57D00522F05 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0221EF5C236EE57D00522F05 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0221EF5E236EE57D00522F05 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0224773723DC667F00AB96C9 /* HTTPLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPLayer.swift; sourceTree = "<group>"; };
+		0224773823DC667F00AB96C9 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		0224773B23DC670100AB96C9 /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		0224773F23DC737100AB96C9 /* EOSApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSApi.swift; sourceTree = "<group>"; };
+		0224774123DC738200AB96C9 /* EOSApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSApiRouter.swift; sourceTree = "<group>"; };
+		0224774323DC73D100AB96C9 /* EOSEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSEndpoints.swift; sourceTree = "<group>"; };
+		0224774523DC76D100AB96C9 /* NetworkScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkScheme.swift; sourceTree = "<group>"; };
+		0224774823DC97E700AB96C9 /* EOSAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EOSAccount.swift; sourceTree = "<group>"; };
+		0224776F23DCBC3E00AB96C9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		02266051238156D800A7F0F9 /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		02266052238156D900A7F0F9 /* Combinable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Combinable.swift; sourceTree = "<group>"; };
+		022660572381574200A7F0F9 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		022ACD3F23806E99005A856E /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
+		0232A40423DF45870080DFF1 /* CoinRatesProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinRatesProvider.swift; sourceTree = "<group>"; };
+		0232A40523DF45870080DFF1 /* CoinsRatesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinsRatesRouter.swift; sourceTree = "<group>"; };
+		0232A40723DF45870080DFF1 /* CoinRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinRate.swift; sourceTree = "<group>"; };
+		0232A40823DF45870080DFF1 /* CoinRates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinRates.swift; sourceTree = "<group>"; };
+		0232A40E23DF459E0080DFF1 /* AvatarProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarProvider.swift; sourceTree = "<group>"; };
+		0232A41023DF46000080DFF1 /* AdorableAvatars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdorableAvatars.swift; sourceTree = "<group>"; };
+		023DB808238000290051F149 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		023DB80E238002F20051F149 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		023DB8102380031D0051F149 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		023DB812238006170051F149 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		023F1B5B23DCC0E0007F65EC /* EOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EOS.xcdatamodel; sourceTree = "<group>"; };
+		023F1B7A23DCCB6F007F65EC /* EOSPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSPersistence.swift; sourceTree = "<group>"; };
+		025A107323DECE82001035E8 /* EOSAccountTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EOSAccountTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		025A107723DECE82001035E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		025A107F23DECF27001035E8 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		025A108123DECF7C001035E8 /* BitUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitUnitTests.swift; sourceTree = "<group>"; };
+		025A108523DED229001035E8 /* EOSPersistenceMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSPersistenceMapperTests.swift; sourceTree = "<group>"; };
+		025A108F23DED8BF001035E8 /* EOSDBAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EOSDBAccount.swift; sourceTree = "<group>"; };
+		025A109323DEDD75001035E8 /* EOSEndpointsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSEndpointsTests.swift; sourceTree = "<group>"; };
+		025A109723DEE43F001035E8 /* AccounstListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccounstListCollectionViewController.swift; sourceTree = "<group>"; };
+		025A109923DEE45D001035E8 /* AccounstListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccounstListViewModel.swift; sourceTree = "<group>"; };
+		025A109B23DEE5D1001035E8 /* UIWebAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWebAvatarView.swift; sourceTree = "<group>"; };
+		025A109D23DEE943001035E8 /* AccountCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCollectionViewCell.swift; sourceTree = "<group>"; };
+		0270F77623DDA2EA00F46DED /* BackgroundRepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundRepeatingTimer.swift; sourceTree = "<group>"; };
+		029BEF5C23DF18900014ECFA /* NumberExtractable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberExtractable.swift; sourceTree = "<group>"; };
+		02AD723123DCD92D00CBE25F /* EOSPersistenceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSPersistenceMapper.swift; sourceTree = "<group>"; };
+		02AD723423DD76DD00CBE25F /* CoreDataPersistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataPersistence.swift; sourceTree = "<group>"; };
+		02B6AF9123DE1E38006C9A52 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		02B6AF9823DE211B006C9A52 /* eurostile-extended-black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "eurostile-extended-black.ttf"; sourceTree = "<group>"; };
+		02B6AF9A23DE411B006C9A52 /* BitUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitUnit.swift; sourceTree = "<group>"; };
+		02C4B800236E0251003631EF /* EOS Account.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EOS Account.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02F05F2623DF0CF5004BEC06 /* EOSAccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSAccountPresenter.swift; sourceTree = "<group>"; };
+		02F0BF3F237A934000BC0603 /* NetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		02F0BF43237A934000BC0603 /* UITableView_Cells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView_Cells.swift; sourceTree = "<group>"; };
+		02F90E2E23DDFDE90083E5D9 /* EOS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EOS.storyboard; sourceTree = "<group>"; };
+		02F90E3023DDFE210083E5D9 /* UIViewRounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewRounded.swift; sourceTree = "<group>"; };
+		02F90E3123DDFE210083E5D9 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		02F90E3223DDFE210083E5D9 /* DustLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DustLayer.swift; sourceTree = "<group>"; };
+		02F90E3623DE04AE0083E5D9 /* EOSAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSAccountViewController.swift; sourceTree = "<group>"; };
+		02F90E3823DE05280083E5D9 /* EOSAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSAccountViewModel.swift; sourceTree = "<group>"; };
+		02F90E3B23DE05CC0083E5D9 /* EOSCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSCoordinator.swift; sourceTree = "<group>"; };
+		02F90E3D23DE065D0083E5D9 /* EOSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSService.swift; sourceTree = "<group>"; };
+		02F90E4023DE13A10083E5D9 /* MappedFetchedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MappedFetchedList.swift; sourceTree = "<group>"; };
+		02F90E4123DE13A10083E5D9 /* FetchedObjectList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchedObjectList.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		025A107023DECE82001035E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02C4B7FD236E0251003631EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0221EF56236EE57D00522F05 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0221EF5B236EE57D00522F05 /* AppDelegate */,
+				0221EF5D236EE57D00522F05 /* Views */,
+				0221EF57236EE57D00522F05 /* Resources */,
+				0221EF59236EE57D00522F05 /* Supporting Files */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0221EF57236EE57D00522F05 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0221EF58236EE57D00522F05 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0221EF59236EE57D00522F05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0221EF5A236EE57D00522F05 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0221EF5B236EE57D00522F05 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0221EF5C236EE57D00522F05 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		0221EF5D236EE57D00522F05 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0221EF5E236EE57D00522F05 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0224773323DC659F00AB96C9 /* EOS */ = {
+			isa = PBXGroup;
+			children = (
+				02F90E3A23DE05BF0083E5D9 /* Coordinators */,
+				0224773523DC659F00AB96C9 /* EOSAccount */,
+				0224773423DC659F00AB96C9 /* EOSLogin */,
+				0224773D23DC733500AB96C9 /* Services */,
+				0224774723DC97C900AB96C9 /* Models */,
+				023F1B5923DCC0CD007F65EC /* Storage */,
+				02F90E2D23DDFDD30083E5D9 /* Views */,
+				02B6AF9023DE1E26006C9A52 /* Resources */,
+			);
+			path = EOS;
+			sourceTree = "<group>";
+		};
+		0224773423DC659F00AB96C9 /* EOSLogin */ = {
+			isa = PBXGroup;
+			children = (
+				025A109723DEE43F001035E8 /* AccounstListCollectionViewController.swift */,
+				025A109923DEE45D001035E8 /* AccounstListViewModel.swift */,
+			);
+			path = EOSLogin;
+			sourceTree = "<group>";
+		};
+		0224773523DC659F00AB96C9 /* EOSAccount */ = {
+			isa = PBXGroup;
+			children = (
+				02F90E3623DE04AE0083E5D9 /* EOSAccountViewController.swift */,
+				02F90E3823DE05280083E5D9 /* EOSAccountViewModel.swift */,
+			);
+			path = EOSAccount;
+			sourceTree = "<group>";
+		};
+		0224773623DC667F00AB96C9 /* HTTPLayer */ = {
+			isa = PBXGroup;
+			children = (
+				0224773B23DC670100AB96C9 /* HTTP.swift */,
+				0224773723DC667F00AB96C9 /* HTTPLayer.swift */,
+				0224773823DC667F00AB96C9 /* HTTPMethod.swift */,
+			);
+			path = HTTPLayer;
+			sourceTree = "<group>";
+		};
+		0224773D23DC733500AB96C9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				02F90E3D23DE065D0083E5D9 /* EOSService.swift */,
+				023F1B7923DCCB1A007F65EC /* Persistence */,
+				0224773E23DC735200AB96C9 /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0224773E23DC735200AB96C9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0224773F23DC737100AB96C9 /* EOSApi.swift */,
+				0224774123DC738200AB96C9 /* EOSApiRouter.swift */,
+				0224774323DC73D100AB96C9 /* EOSEndpoints.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0224774723DC97C900AB96C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0224774823DC97E700AB96C9 /* EOSAccount.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0224776E23DCBC2F00AB96C9 /* PersistenceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				0224776F23DCBC3E00AB96C9 /* Persistence.swift */,
+				02AD723323DD76DD00CBE25F /* CoreData */,
+			);
+			path = PersistenceLayer;
+			sourceTree = "<group>";
+		};
+		022660552381574200A7F0F9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				02B6AF9A23DE411B006C9A52 /* BitUnit.swift */,
+				022660572381574200A7F0F9 /* Logger.swift */,
+				0270F77623DDA2EA00F46DED /* BackgroundRepeatingTimer.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0232A40123DF45870080DFF1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0232A40223DF45870080DFF1 /* CoinRates */,
+				0232A40923DF45870080DFF1 /* Avatars */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0232A40223DF45870080DFF1 /* CoinRates */ = {
+			isa = PBXGroup;
+			children = (
+				0232A40323DF45870080DFF1 /* Networking */,
+				0232A40623DF45870080DFF1 /* Models */,
+				0232A40823DF45870080DFF1 /* CoinRates.swift */,
+			);
+			path = CoinRates;
+			sourceTree = "<group>";
+		};
+		0232A40323DF45870080DFF1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0232A40423DF45870080DFF1 /* CoinRatesProvider.swift */,
+				0232A40523DF45870080DFF1 /* CoinsRatesRouter.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0232A40623DF45870080DFF1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0232A40723DF45870080DFF1 /* CoinRate.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0232A40923DF45870080DFF1 /* Avatars */ = {
+			isa = PBXGroup;
+			children = (
+				0232A40E23DF459E0080DFF1 /* AvatarProvider.swift */,
+				0232A41023DF46000080DFF1 /* AdorableAvatars.swift */,
+			);
+			path = Avatars;
+			sourceTree = "<group>";
+		};
+		023DB807238000290051F149 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				023DB808238000290051F149 /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		023F1B5923DCC0CD007F65EC /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				023F1B5A23DCC0E0007F65EC /* EOS.xcdatamodeld */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		023F1B7923DCCB1A007F65EC /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				023F1B7A23DCCB6F007F65EC /* EOSPersistence.swift */,
+				02AD723123DCD92D00CBE25F /* EOSPersistenceMapper.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		025A107423DECE82001035E8 /* EOSAccountTests */ = {
+			isa = PBXGroup;
+			children = (
+				025A108423DED20F001035E8 /* EOS */,
+				025A107D23DECF15001035E8 /* Core */,
+				025A107E23DECF27001035E8 /* Fake */,
+				025A108B23DED628001035E8 /* Utilites */,
+				025A107723DECE82001035E8 /* Info.plist */,
+			);
+			path = EOSAccountTests;
+			sourceTree = "<group>";
+		};
+		025A107D23DECF15001035E8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				025A108123DECF7C001035E8 /* BitUnitTests.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		025A107E23DECF27001035E8 /* Fake */ = {
+			isa = PBXGroup;
+			children = (
+				025A107F23DECF27001035E8 /* Logger.swift */,
+			);
+			path = Fake;
+			sourceTree = "<group>";
+		};
+		025A108423DED20F001035E8 /* EOS */ = {
+			isa = PBXGroup;
+			children = (
+				025A108523DED229001035E8 /* EOSPersistenceMapperTests.swift */,
+				025A109323DEDD75001035E8 /* EOSEndpointsTests.swift */,
+			);
+			path = EOS;
+			sourceTree = "<group>";
+		};
+		025A108B23DED628001035E8 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				025A108F23DED8BF001035E8 /* EOSDBAccount.swift */,
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
+		02AD723323DD76DD00CBE25F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				02AD723423DD76DD00CBE25F /* CoreDataPersistence.swift */,
+				02F90E3F23DE13A10083E5D9 /* Fetching  */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		02B6AF9023DE1E26006C9A52 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				02B6AF9123DE1E38006C9A52 /* Images.xcassets */,
+				02B6AF9723DE211B006C9A52 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		02B6AF9723DE211B006C9A52 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				02B6AF9823DE211B006C9A52 /* eurostile-extended-black.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		02C4B7F7236E0251003631EF = {
+			isa = PBXGroup;
+			children = (
+				02C4B802236E0251003631EF /* EOSAccountApp */,
+				025A107423DECE82001035E8 /* EOSAccountTests */,
+				02C4B801236E0251003631EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02C4B801236E0251003631EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02C4B800236E0251003631EF /* EOS Account.app */,
+				025A107323DECE82001035E8 /* EOSAccountTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02C4B802236E0251003631EF /* EOSAccountApp */ = {
+			isa = PBXGroup;
+			children = (
+				0221EF56236EE57D00522F05 /* App */,
+				023DB807238000290051F149 /* Coordinators */,
+				0224773323DC659F00AB96C9 /* EOS */,
+				0232A40123DF45870080DFF1 /* Services */,
+				02F0BF3D237A934000BC0603 /* Core */,
+			);
+			path = EOSAccountApp;
+			sourceTree = "<group>";
+		};
+		02F0BF3D237A934000BC0603 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0224776E23DCBC2F00AB96C9 /* PersistenceLayer */,
+				02F0BF3E237A934000BC0603 /* NetworkLayer */,
+				02F0BF41237A934000BC0603 /* Extensions */,
+				022660552381574200A7F0F9 /* Utilities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		02F0BF3E237A934000BC0603 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				023DB8102380031D0051F149 /* Network.swift */,
+				023DB80E238002F20051F149 /* NetworkRequest.swift */,
+				02F0BF3F237A934000BC0603 /* NetworkLayer.swift */,
+				0224774523DC76D100AB96C9 /* NetworkScheme.swift */,
+				0224773623DC667F00AB96C9 /* HTTPLayer */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		02F0BF41237A934000BC0603 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				02266052238156D900A7F0F9 /* Combinable.swift */,
+				02266051238156D800A7F0F9 /* Identifiable.swift */,
+				029BEF5C23DF18900014ECFA /* NumberExtractable.swift */,
+				02F0BF42237A934000BC0603 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		02F0BF42237A934000BC0603 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				02F0BF43237A934000BC0603 /* UITableView_Cells.swift */,
+				023DB812238006170051F149 /* Storyboarded.swift */,
+				022ACD3F23806E99005A856E /* AlertPresenter.swift */,
+				025A109B23DEE5D1001035E8 /* UIWebAvatarView.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		02F90E2D23DDFDD30083E5D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02F90E3223DDFE210083E5D9 /* DustLayer.swift */,
+				025A109D23DEE943001035E8 /* AccountCollectionViewCell.swift */,
+				02F90E3123DDFE210083E5D9 /* ProgressView.swift */,
+				02F90E3023DDFE210083E5D9 /* UIViewRounded.swift */,
+				02F90E2E23DDFDE90083E5D9 /* EOS.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		02F90E3A23DE05BF0083E5D9 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				02F90E3B23DE05CC0083E5D9 /* EOSCoordinator.swift */,
+				02F05F2623DF0CF5004BEC06 /* EOSAccountPresenter.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		02F90E3F23DE13A10083E5D9 /* Fetching  */ = {
+			isa = PBXGroup;
+			children = (
+				02F90E4123DE13A10083E5D9 /* FetchedObjectList.swift */,
+				02F90E4023DE13A10083E5D9 /* MappedFetchedList.swift */,
+			);
+			path = "Fetching ";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		025A107223DECE82001035E8 /* EOSAccountTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025A107A23DECE82001035E8 /* Build configuration list for PBXNativeTarget "EOSAccountTests" */;
+			buildPhases = (
+				025A106F23DECE82001035E8 /* Sources */,
+				025A107023DECE82001035E8 /* Frameworks */,
+				025A107123DECE82001035E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				025A107923DECE82001035E8 /* PBXTargetDependency */,
+			);
+			name = EOSAccountTests;
+			productName = EOSAccountTests;
+			productReference = 025A107323DECE82001035E8 /* EOSAccountTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		02C4B7FF236E0251003631EF /* EOSAccountApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02C4B81F236E0254003631EF /* Build configuration list for PBXNativeTarget "EOSAccountApp" */;
+			buildPhases = (
+				02C4B7FC236E0251003631EF /* Sources */,
+				02C4B7FD236E0251003631EF /* Frameworks */,
+				02C4B7FE236E0251003631EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EOSAccountApp;
+			productName = CurrencyRatesApp;
+			productReference = 02C4B800236E0251003631EF /* EOS Account.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02C4B7F8236E0251003631EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Ilia Nikolaenko";
+				TargetAttributes = {
+					025A107223DECE82001035E8 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 02C4B7FF236E0251003631EF;
+					};
+					02C4B7FF236E0251003631EF = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 02C4B7FB236E0251003631EF /* Build configuration list for PBXProject "EOSAccountApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02C4B7F7236E0251003631EF;
+			productRefGroup = 02C4B801236E0251003631EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02C4B7FF236E0251003631EF /* EOSAccountApp */,
+				025A107223DECE82001035E8 /* EOSAccountTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		025A107123DECE82001035E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02C4B7FE236E0251003631EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0221EF6D236EE57D00522F05 /* LaunchScreen.storyboard in Resources */,
+				0221EF6A236EE57D00522F05 /* Assets.xcassets in Resources */,
+				02B6AF9223DE1E38006C9A52 /* Images.xcassets in Resources */,
+				02F90E2F23DDFDE90083E5D9 /* EOS.storyboard in Resources */,
+				02B6AF9923DE211B006C9A52 /* eurostile-extended-black.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		025A106F23DECE82001035E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025A109423DEDD75001035E8 /* EOSEndpointsTests.swift in Sources */,
+				025A108323DECFC5001035E8 /* BitUnit.swift in Sources */,
+				025A108223DECF7C001035E8 /* BitUnitTests.swift in Sources */,
+				025A108723DED232001035E8 /* EOSPersistenceMapper.swift in Sources */,
+				025A108823DED287001035E8 /* EOSAccount.swift in Sources */,
+				025A109623DEDDF8001035E8 /* NetworkScheme.swift in Sources */,
+				025A109523DEDD90001035E8 /* EOSEndpoints.swift in Sources */,
+				025A108623DED229001035E8 /* EOSPersistenceMapperTests.swift in Sources */,
+				025A108023DECF27001035E8 /* Logger.swift in Sources */,
+				025A109023DED8BF001035E8 /* EOSDBAccount.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02C4B7FC236E0251003631EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F90E4223DE13A10083E5D9 /* MappedFetchedList.swift in Sources */,
+				0270F77723DDA2EA00F46DED /* BackgroundRepeatingTimer.swift in Sources */,
+				023DB813238006170051F149 /* Storyboarded.swift in Sources */,
+				0224774623DC76D100AB96C9 /* NetworkScheme.swift in Sources */,
+				02AD723223DCD92D00CBE25F /* EOSPersistenceMapper.swift in Sources */,
+				02F90E3923DE05280083E5D9 /* EOSAccountViewModel.swift in Sources */,
+				025A109E23DEE943001035E8 /* AccountCollectionViewCell.swift in Sources */,
+				023DB8112380031E0051F149 /* Network.swift in Sources */,
+				0224773A23DC667F00AB96C9 /* HTTPMethod.swift in Sources */,
+				025A109A23DEE45D001035E8 /* AccounstListViewModel.swift in Sources */,
+				0224773C23DC670100AB96C9 /* HTTP.swift in Sources */,
+				0224777023DCBC3E00AB96C9 /* Persistence.swift in Sources */,
+				02AD723523DD76DD00CBE25F /* CoreDataPersistence.swift in Sources */,
+				02F90E3423DDFE210083E5D9 /* ProgressView.swift in Sources */,
+				02F90E3C23DE05CC0083E5D9 /* EOSCoordinator.swift in Sources */,
+				023F1B7B23DCCB6F007F65EC /* EOSPersistence.swift in Sources */,
+				029BEF5D23DF18900014ECFA /* NumberExtractable.swift in Sources */,
+				02F90E3E23DE065D0083E5D9 /* EOSService.swift in Sources */,
+				0224774923DC97E700AB96C9 /* EOSAccount.swift in Sources */,
+				0232A40A23DF45870080DFF1 /* CoinRatesProvider.swift in Sources */,
+				0232A40D23DF45870080DFF1 /* CoinRates.swift in Sources */,
+				0232A41123DF46000080DFF1 /* AdorableAvatars.swift in Sources */,
+				022660582381574200A7F0F9 /* Logger.swift in Sources */,
+				0224774223DC738200AB96C9 /* EOSApiRouter.swift in Sources */,
+				02F90E3323DDFE210083E5D9 /* UIViewRounded.swift in Sources */,
+				02266053238156D900A7F0F9 /* Identifiable.swift in Sources */,
+				0232A40B23DF45870080DFF1 /* CoinsRatesRouter.swift in Sources */,
+				02B6AF9B23DE411C006C9A52 /* BitUnit.swift in Sources */,
+				02F0BF48237A934000BC0603 /* NetworkLayer.swift in Sources */,
+				023F1B5C23DCC0E0007F65EC /* EOS.xcdatamodeld in Sources */,
+				0232A40C23DF45870080DFF1 /* CoinRate.swift in Sources */,
+				0224774023DC737100AB96C9 /* EOSApi.swift in Sources */,
+				02F90E3523DDFE210083E5D9 /* DustLayer.swift in Sources */,
+				025A109C23DEE5D1001035E8 /* UIWebAvatarView.swift in Sources */,
+				022ACD4023806E99005A856E /* AlertPresenter.swift in Sources */,
+				02266054238156D900A7F0F9 /* Combinable.swift in Sources */,
+				023DB80A238000290051F149 /* AppCoordinator.swift in Sources */,
+				0232A40F23DF459E0080DFF1 /* AvatarProvider.swift in Sources */,
+				02F90E3723DE04AE0083E5D9 /* EOSAccountViewController.swift in Sources */,
+				023DB80F238002F20051F149 /* NetworkRequest.swift in Sources */,
+				02F90E4323DE13A10083E5D9 /* FetchedObjectList.swift in Sources */,
+				0224774423DC73D100AB96C9 /* EOSEndpoints.swift in Sources */,
+				025A109823DEE43F001035E8 /* AccounstListCollectionViewController.swift in Sources */,
+				02F05F2723DF0CF5004BEC06 /* EOSAccountPresenter.swift in Sources */,
+				0221EF6C236EE57D00522F05 /* AppDelegate.swift in Sources */,
+				0224773923DC667F00AB96C9 /* HTTPLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		025A107923DECE82001035E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02C4B7FF236E0251003631EF /* EOSAccountApp */;
+			targetProxy = 025A107823DECE82001035E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		025A107B23DECE82001035E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3R652HBQ74;
+				INFOPLIST_FILE = EOSAccountTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diz.EOSAccountTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EOS Account.app/EOS Account";
+			};
+			name = Debug;
+		};
+		025A107C23DECE82001035E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3R652HBQ74;
+				INFOPLIST_FILE = EOSAccountTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diz.EOSAccountTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EOS Account.app/EOS Account";
+			};
+			name = Release;
+		};
+		02C4B81D236E0254003631EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		02C4B81E236E0254003631EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02C4B820236E0254003631EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1.0;
+				INFOPLIST_FILE = "$(SRCROOT)/EOSAccountApp/App/Supporting Files/Info.plist";
+				MARKETING_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diezmal.eosaccountapp;
+				PRODUCT_NAME = "EOS Account";
+			};
+			name = Debug;
+		};
+		02C4B821236E0254003631EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 1.0;
+				INFOPLIST_FILE = "$(SRCROOT)/EOSAccountApp/App/Supporting Files/Info.plist";
+				MARKETING_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diezmal.eosaccountapp;
+				PRODUCT_NAME = "EOS Account";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		025A107A23DECE82001035E8 /* Build configuration list for PBXNativeTarget "EOSAccountTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025A107B23DECE82001035E8 /* Debug */,
+				025A107C23DECE82001035E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02C4B7FB236E0251003631EF /* Build configuration list for PBXProject "EOSAccountApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C4B81D236E0254003631EF /* Debug */,
+				02C4B81E236E0254003631EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02C4B81F236E0254003631EF /* Build configuration list for PBXNativeTarget "EOSAccountApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C4B820236E0254003631EF /* Debug */,
+				02C4B821236E0254003631EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		023F1B5A23DCC0E0007F65EC /* EOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				023F1B5B23DCC0E0007F65EC /* EOS.xcdatamodel */,
+			);
+			currentVersion = 023F1B5B23DCC0E0007F65EC /* EOS.xcdatamodel */;
+			path = EOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 02C4B7F8236E0251003631EF /* Project object */;
+}
